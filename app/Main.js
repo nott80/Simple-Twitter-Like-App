@@ -11,6 +11,7 @@ import Footer from "./components/Footer"
 //Pages
 import About from "./components/About"
 import Terms from "./components/Terms"
+import CreatePost from "./components/CreatePost"
 
 function Main() {
   const [isLogin, setIslogin] = useState(Boolean(localStorage.getItem("complexAppToken")))
@@ -23,6 +24,9 @@ function Main() {
         </Route>
         <Route path="/about-us" exact>
           <About />
+        </Route>
+        <Route path="/create-post">
+          <CreatePost />
         </Route>
         <Route path="/terms" exact>
           <Terms />
